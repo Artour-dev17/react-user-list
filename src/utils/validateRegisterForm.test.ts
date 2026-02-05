@@ -14,8 +14,8 @@ describe("validateRegisterForm", ()=>{
    it("returns error if passwords do not match", ()=>{
        const errors = validateRegisterForm({
            email: "test@mail.com",
-           password: "12345",
-           confirmPassword: "54321",
+           password: "54321",
+           confirmPassword: "12345",
        });
 
        expect(errors.confirmPassword).toBeDefined();
@@ -24,8 +24,8 @@ describe("validateRegisterForm", ()=>{
     it("returns error if password is less than 6 characters", ()=>{
         const errors = validateRegisterForm({
             email: "test@mail.com",
-            password: "123",
-            confirmPassword: "123",
+            password: "333",
+            confirmPassword: "333",
         });
         expect(errors.password).toBeDefined();
     });
