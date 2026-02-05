@@ -1,0 +1,9 @@
+#user{
+  padding: 8px;
+  border-bottom: 1px solid black;
+}
+
+#root{
+  width: 100%;
+  background-color: lightgrey;
+}
