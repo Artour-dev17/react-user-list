@@ -5,4 +5,3 @@ export type UsersState =
     | {status: "loading"}
     | {status: "error"; error: string}
     | {status: "success"; users: User[]}
-
